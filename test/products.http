@@ -1,0 +1,27 @@
+### products get endpoint
+GET http://localhost:3000/api/products
+
+### good products get endpoint
+POST http://localhost:3000/api/products
+
+{
+  "name": "chocolate",
+  "price": 10
+}
+
+### bad products get endpoint
+POST http://localhost:3000/api/products
+
+{
+  "name": "c",
+  "price": 10
+}
+
+### dirty products get endpoint
+POST http://localhost:3000/api/products
+
+{
+  "name": "chocolate",
+  "price": 10,
+  "isEvil": "true"
+}

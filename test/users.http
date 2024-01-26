@@ -1,0 +1,72 @@
+### users get endpoint
+GET http://localhost:3000/api/users
+
+### Post endpoint for users
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+"user": "bob"
+}
+
+### Bad Post endpoint for users
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "id": 3
+}
+
+<> 2024-01-25T164237.400.json
+
+### Good PUT request for creating new user
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+  "name": "steve"
+}
+
+### Bad PUT request for updating user with id>10
+PUT http://localhost:3000/api/users/110
+Content-Type: application/json
+
+{
+  "name": "steve"
+}
+
+### Bad PUT request for updating user with no name
+PUT http://localhost:3000/api/users/110
+Content-Type: application/json
+
+{
+  "name": ""
+}
+
+<> 2024-01-25T164058.400.json
+
+### Good DELETE request for updating user with no name
+DELETE http://localhost:3000/api/users/1
+Content-Type: application/json
+
+### Bad DELETE request for updating user with no name
+DELETE http://localhost:3000/api/users/11
+Content-Type: application/json
+
+<> 2024-01-25T163412.404.json
+<> 2024-01-25T163400.200.json
+<> 2024-01-25T163129.400.json
+<> 2024-01-25T163046.404.json
+<> 2024-01-25T163040.404.json
+<> 2024-01-25T163029.200.json
+<> 2024-01-25T163003.200.json
+<> 2024-01-25T162943.200.json
+<> 2024-01-25T162918.200.json
+<> 2024-01-25T162849.200.json
+<> 2024-01-25T162820.200.json
+<> 2024-01-25T162755.200.json
+<> 2024-01-25T162738.200.json
+<> 2024-01-25T162733.200.json
+<> 2024-01-25T162716.200.json
+<> 2024-01-25T161650.400.json
+<> 2024-01-25T161256.200.json
