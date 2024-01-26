@@ -1,12 +1,19 @@
-### users get endpoint
+### GET all users endpoint
 GET http://localhost:3000/api/users
 
-### Post endpoint for users
+### GET a user endpoint
+GET http://localhost:3000/api/users/1
+
+### GET bad a user endpoint
+GET http://localhost:3000/api/users/2
+
+### POST endpoint for creating new users
 POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-"user": "bob"
+  "name": "rohit",
+  "email": "rohit@gmail.com"
 }
 
 ### Bad Post endpoint for users
@@ -20,11 +27,12 @@ Content-Type: application/json
 <> 2024-01-25T164237.400.json
 
 ### Good PUT request for creating new user
-PUT http://localhost:3000/api/users/1
+PUT http://localhost:3000/api/users/2
 Content-Type: application/json
 
 {
-  "name": "steve"
+  "name": "bobzz",
+  "email": "bobzz@gmail.com"
 }
 
 ### Bad PUT request for updating user with id>10
