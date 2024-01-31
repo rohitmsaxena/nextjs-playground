@@ -5,8 +5,8 @@ GET http://localhost:3000/api/products
 POST http://localhost:3000/api/products
 
 {
-  "name": "chocolate",
-  "price": 10
+  "name": "candy",
+  "price": 20
 }
 
 ### bad products get endpoint
